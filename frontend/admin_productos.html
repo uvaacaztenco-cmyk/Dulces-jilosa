@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Administrar Productos</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>Administración de Productos</h1>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+<hr>
+
+<h2>Agregar producto</h2>
+
+<input id="nombre" placeholder="Nombre producto">
+
+<input id="precio" type="number" placeholder="Precio">
+
+<input id="stock" type="number" placeholder="Stock">
+
+<button onclick="crearProducto()">Agregar</button>
+
+<hr>
+
+<h2>Lista de productos</h2>
+
+<table border="1" width="60%" align="center">
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+<th>Nombre</th>
+<th>Precio</th>
+<th>Stock</th>
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tablaProductos"></tbody>
+
+</table>
+
+<script src="admin_productos.js"></script>
+
+</body>
+
+</html>

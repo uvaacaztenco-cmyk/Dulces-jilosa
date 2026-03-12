@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>POS Dulces Jilosa</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>POS Dulces Jilosa</h1>
+
+<h3 id="usuario"></h3>
+
+<button onclick="logout()">Cerrar sesión</button>
+
+<hr>
+
+<h2>Buscar producto</h2>
+
+<input type="text" id="busqueda" placeholder="Buscar producto..." onkeyup="buscarProducto()">
+
+<hr>
+
+<h2>Productos</h2>
+
+<div id="productos" class="grid-productos"></div>
+
+<hr>
+
+<h2>Carrito</h2>
+
+<ul id="carrito"></ul>
+
+<h3>Total: $<span id="total">0</span></h3>
+
+<hr>
+
+<h2>Pago</h2>
+
+<input type="number" id="pago" placeholder="Dinero recibido">
+
+<h3>Cambio: $<span id="cambio">0</span></h3>
+
+<button onclick="calcularCambio()">Calcular cambio</button>
+
+<br><br>
+
+<button onclick="registrarVenta()">Registrar venta</button>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>
